@@ -1,25 +1,15 @@
-
-Por isso o GitHub mostra como **texto comum** e não como diagrama.
-
----
-
-# ✅ COMO RESOLVER — COPIE EXATAMENTE ISTO:
-
-Cole **sem adicionar nada antes ou depois**, exatamente assim:
-
-```mermaid
 flowchart LR
     %% ==== Atores ====
     R[Recrutador]:::actor
     U[Candidato]:::actor
 
     %% ==== API ====
-    subgraph API[AvaliadorGuia.API (ASP.NET Core)]
+    subgraph API[AvaliadorGuia.API]
         
         %% --- Segurança / Autenticação ---
         subgraph SEC[Security]
             AuthCtrl[AuthController]
-            AuthSvc[AuthService (JWT)]
+            AuthSvc[AuthService - JWT]
         end
 
         %% --- Camada de Controllers ---
@@ -42,7 +32,7 @@ flowchart LR
     end
 
     %% ==== Banco de Dados ====
-    DB[(SQLite Database<br/>Candidates, Jobs, Challenges, Sessions, Hints)]:::db
+    DB[(SQLite Database<br/>Candidates<br/>Jobs<br/>Challenges<br/>Sessions<br/>Hints)]:::db
 
     %% ==== Fluxo de Autenticação ====
     R -->|Login / Token| AuthCtrl
@@ -58,8 +48,8 @@ flowchart LR
 
     %% ==== Fluxo Candidato ====
     U -->|Cadastro / Atualização| CCand
-    U -->|Iniciar sessão de entrevista| CSess
-    U -->|Pedir dicas ao Tutor| CHint
+    U -->|Iniciar sessão| CSess
+    U -->|Pedir dicas| CHint
 
     %% ==== Controllers -> Services ====
     CCand --> SCand
