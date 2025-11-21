@@ -1,3 +1,5 @@
+```mermaid
+
 flowchart LR
     %% ==== Atores ====
     R[Recrutador]:::actor
@@ -67,3 +69,6 @@ flowchart LR
 
     classDef actor fill:#dae8fc,stroke:#6c8ebf,stroke-width:1px;
     classDef db fill:#e1d5e7,stroke:#9673a6,stroke-width:1px;
+```
+
+
