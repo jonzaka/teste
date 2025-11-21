@@ -1,3 +1,13 @@
+
+Por isso o GitHub mostra como **texto comum** e não como diagrama.
+
+---
+
+# ✅ COMO RESOLVER — COPIE EXATAMENTE ISTO:
+
+Cole **sem adicionar nada antes ou depois**, exatamente assim:
+
+```mermaid
 flowchart LR
     %% ==== Atores ====
     R[Recrutador]:::actor
